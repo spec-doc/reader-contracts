@@ -11,6 +11,15 @@ namespace SpecDoc\Contract\Reader;
 interface FileReaderInterface extends ReaderInterface
 {
     /**
+     * Sets the file for reading.
+     *
+     * @param string $path
+     *
+     * @return static
+     */
+    public function setFile(string $path): static;
+
+    /**
      * Returns a flag indicating whether the file extension is supported.
      *
      * @param string $extension
